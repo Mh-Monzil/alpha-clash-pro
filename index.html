@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Alpha Clash Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen bg-[#000312] bg-[url('images/background.png')] bg-no-repeat bg-center">
+
+    <!-- home  -->
+    <section id="home" class=" h-screen text-center flex justify-center items-center">
+        <div class="text-white space-y-12">
+            <h1 class="font-anton uppercase text-8xl">alpha clash pro</h1>
+            <p class="text-2xl">Unleash your keyboard kung fu: please 'Enter' to play</p>
+            <button onclick="play()" id="play-now" class="bg-white text-black text-2xl  font-semibold py-4 px-8 rounded-lg">Play Now</button>
+        </div>
+    </section>
+
+
+    <!-- playground  -->
+    <section id="playground" class="hidden h-screen flex flex-col justify-center items-center  space-y-14">
+        <div>
+            <div class="artboard artboard-horizontal phone-6 border-[15px] border-[#252634] rounded-2xl bg-[#FFFFFFCC]">
+                <div class="capitalize bg-[#252634] w-[396px] mx-auto rounded-b-xl text-center pb-4 text-xl font-semibold text-white">Don't watch keyboard while playing</div>
+                <p id="keyword" class="text-9xl font-semibold flex  justify-center  mt-8 uppercase">y</p>
+            </div>
+        </div>
+
+        <section class="w-full">
+            <div class="font-semibold text-2xl">
+                <div class="flex justify-center gap-1 my-1 w-full ">
+                    <kbd id="q" class="kbd">q</kbd>
+                    <kbd id="w" class="kbd">w</kbd>
+                    <kbd id="e" class="kbd">e</kbd>
+                    <kbd id="r" class="kbd">r</kbd>
+                    <kbd id="t" class="kbd">t</kbd>
+                    <kbd id="y" class="kbd">y</kbd>
+                    <kbd id="u" class="kbd">u</kbd>
+                    <kbd id="i" class="kbd">i</kbd>
+                    <kbd id="o" class="kbd">o</kbd>
+                    <kbd id="p" class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="a" class="kbd">a</kbd>
+                    <kbd id="s" class="kbd">s</kbd>
+                    <kbd id="d" class="kbd">d</kbd>
+                    <kbd id="f" class="kbd">f</kbd>
+                    <kbd id="g" class="kbd">g</kbd>
+                    <kbd id="h" class="kbd">h</kbd>
+                    <kbd id="j" class="kbd">j</kbd>
+                    <kbd id="k" class="kbd">k</kbd>
+                    <kbd id="l" class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="z" class="kbd">z</kbd>
+                    <kbd id="x" class="kbd">x</kbd>
+                    <kbd id="c" class="kbd">c</kbd>
+                    <kbd id="v" class="kbd">v</kbd>
+                    <kbd id="b" class="kbd">b</kbd>
+                    <kbd id="n" class="kbd">n</kbd>
+                    <kbd id="m" class="kbd">m</kbd>
+                    <kbd id="/" class="kbd">/</kbd>
+                  </div>
+            </div>
+    
+    
+            <div class="text-white flex justify-between w-3/4 mx-auto">
+                <h2 class="py-3 px-8 bg-[#894189] rounded-[30px]">Life <span id="life">5</span></h2>
+                <h2 class="py-3 px-8 bg-[#360490] rounded-[30px]">Score <span id="score">0</span></h2>
+            </div>
+        </section>
+        
+
+    </section>
+
+
+    <!-- score  -->
+    <section id="score-card" class="hidden h-screen flex justify-center items-center text-center">
+        <div class="w-[396px] h-[282px] bg-purple-600 rounded-lg p-8 space-y-6">
+            <h1 class="text-5xl font-medium text-white">Score: <span id="score-card-result">0</span></h1>
+            <button onclick="play()" id="play-again" class="bg-white text-black text-2xl  font-semibold py-4 px-8 rounded-lg">Play Again</button>
+            <p class="capitalize text-white">practice will make you pro </p>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
